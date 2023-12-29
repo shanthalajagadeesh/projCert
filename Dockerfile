@@ -5,7 +5,7 @@ RUN apt-get update -y
 #Install Apache
 RUN apt-get install -y apache2
 #Install PHP Modules
-RUN apt-get install -y php7.0 libapache2-mod-php7.0 php7.0-cli php7.0-common
+RUN apt-get install -y php7.0 
 #Copy Application Files
 RUN rm -rf /var/www/html/*
 COPY website /var/www/html/
